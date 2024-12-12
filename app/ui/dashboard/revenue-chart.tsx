@@ -1,7 +1,6 @@
 import { generateYAxis } from '@/app/lib/utils';
 import { CalendarIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
-import { Revenue } from '@/app/lib/definitions';
 import {fetchRevenue} from "@/app/lib/data";
 
 // This component is representational only.
@@ -23,7 +22,7 @@ export default async function RevenueChart() {
   return (
     <div className="w-full md:col-span-4">
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-        Recent Revenue
+        최근 매출액
       </h2>
       {/* NOTE: Uncomment this code in Chapter 7 */}
 
@@ -54,7 +53,7 @@ export default async function RevenueChart() {
         </div>
         <div className="flex items-center pb-2 pt-6">
           <CalendarIcon className="h-5 w-5 text-gray-500" />
-          <h3 className="ml-2 text-sm text-gray-500 ">Last 12 months</h3>
+          <h3 className="ml-2 text-sm text-gray-500 ">최근 12개월 동향</h3>
         </div>
       </div>
     </div>
